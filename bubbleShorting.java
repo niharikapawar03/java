@@ -1,4 +1,4 @@
-/*
+
 import java.util.*;
 
     public class bubbleShorting {
@@ -35,38 +35,3 @@ import java.util.*;
             sc.close();
         }
     }
-
-*/
-
-
-import java.util.Scanner;
-
-public class bubbleShorting {
-
-    public static int findMaxMin(int[] arr) {
-        int max = arr[0];
-        int min = arr[0];
-
-
-        for (int num : arr) {
-            if (num > max) {
-                max = num;
-            }
-            if (num < min) {
-                min = num;
-            }
-        }
-
-
-        return max - min;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        int n=sc.nextInt();
-        int[] num = new int[n];
-        int difference = findMaxMin(num);
-        System.out.println("The difference " + difference);
-    }
-}
-
